@@ -1,0 +1,25 @@
+name: Legal News Auto-Post Schedule
+
+on:
+  schedule:
+    # 09:00 Thai Time (UTC 02:00)
+    - cron: '0 2 * * *'
+    # 19:00 Thai Time (UTC 12:00)
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Legal News Auto-Post Script
+        run: |
+          python run_legal_autopost.py
