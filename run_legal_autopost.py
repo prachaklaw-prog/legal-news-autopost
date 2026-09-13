@@ -6,9 +6,9 @@ import ssl
 import xml.etree.ElementTree as ET
 import time
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6JAqCNNkbKkO6XP4McXoPb-qPAV-FE7rQ7k4acm0hpFlQ")
+API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6Jx_J14gbhsQuxT0_i0gIhzoASxmEXDAV5wa9mQqjXDWw")
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "389234121692228")
-FB_ACCESS_TOKEN = os.environ.get("FB_ACCESS_TOKEN", "EAAisSSmHfJkBScjcnICqZAu6rKGhMUONK3auzXIFl3QGC64u64wCVpPZBRKkcyP87qs0VLKqhKBw5Vgq6zfzkUtcNMGhckzTKYiWPWb8cZCGzpQ9UvJmCiw7igKEABX3YLOh7lNiZBNdMVgclTb2BAEUZBVBWrlABfovxwNgwCMmVrRWBuwHJilqEicHTEXVAEEe1j3zy2TB27LqUoCRWrVZBYK4g1ytWYV4gJ8YPvuW8C")
+FB_ACCESS_TOKEN = os.environ.get("FB_ACCESS_TOKEN", "EAAisSSmHfJkBSeehsdOxTiZCl4CRq0jyAo5afE3uA00QwWijgslfLHU4RiIw8cGFTdPtFSg2oX3rqjD3UUiZAmE93jVp3bhTOZCZBHac4bAaOk8YmjLGqUlyLm4ZB1j0ppb7LavdQmuWZBVVTgWfgbmD1O3UizjP6pyGdCobNtuNfYjVXApOlzIkDzytnqILpdTvYkAFVO")
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
